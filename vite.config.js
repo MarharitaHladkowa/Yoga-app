@@ -6,6 +6,9 @@ import SortCss from 'postcss-sort-media-queries';
 
 export default defineConfig(({ command }) => {
   return {
+    // 👇👇👇 Добавьте эту строку 👇👇👇
+    base: '/Yoga-app/',
+
     define: {
       [command === 'serve' ? 'global' : '_global']: {},
     },
